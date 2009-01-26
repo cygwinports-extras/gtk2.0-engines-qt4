@@ -1,0 +1,78 @@
+gtk2.0-engines-qt4
+------------------------------------------
+The GTK-Qt Theme Engine is a plugin for GTK that allows GTK applications 
+to use Qt widget styles. Aimed primarily at KDE users, this plugin 
+provides a way to unify the look and feel of the desktop.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libbonoboui2_0-2.24.0-1
+  libgdk_pixbuf2.0_0-2.14.7-1
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-1
+  libpango1.0_0-1.22.4-1
+  libQtCore4-4.4.2-1
+  libQtGui4-4.4.2-1
+  libX11_6-1.1.5-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  automoc4-0.9.87-1
+  binutils-20080624-2
+  cmake-2.6.2-3
+  cygport-0.4.3-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+  pkg-config-0.23a-2
+
+Canonical website:
+  http://gtk-qt.ecs.soton.ac.uk/
+
+Canonical download:
+  http://gtk-qt.ecs.soton.ac.uk/downloads.php
+
+-------------------------------------------
+
+Build instructions:
+  unpack gtk2.0-engines-qt4-1.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gtk2.0-engines-qt4-1.1-X.cygport all
+
+This will create:
+  /usr/src/gtk2.0-engines-qt4-1.1-X-src.tar.bz2
+  /usr/src/gtk2.0-engines-qt4-1.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/gtk-2.0/2.10.0/engines/cygqt4engine.dll
+  /usr/share/doc/gtk2.0-engines-qt4-1.1/AUTHORS
+  /usr/share/doc/gtk2.0-engines-qt4-1.1/COPYING
+  /usr/share/doc/gtk2.0-engines-qt4-1.1/ChangeLog
+  /usr/share/doc/gtk2.0-engines-qt4-1.1/INSTALL
+  /usr/share/locale/bg/LC_MESSAGES/gtkqt4engine.mo
+  /usr/share/locale/cs/LC_MESSAGES/gtkqt4engine.mo
+  /usr/share/locale/de/LC_MESSAGES/gtkqt4engine.mo
+  /usr/share/locale/es/LC_MESSAGES/gtkqt4engine.mo
+  /usr/share/locale/fr/LC_MESSAGES/gtkqt4engine.mo
+  /usr/share/locale/it/LC_MESSAGES/gtkqt4engine.mo
+  /usr/share/locale/nn/LC_MESSAGES/gtkqt4engine.mo
+  /usr/share/locale/ru/LC_MESSAGES/gtkqt4engine.mo
+  /usr/share/locale/sv/LC_MESSAGES/gtkqt4engine.mo
+  /usr/share/locale/tr/LC_MESSAGES/gtkqt4engine.mo
+  /usr/share/themes/Qt4/gtk-2.0/gtkrc
+
+------------------
+
+Port Notes:
+
+----- version 1.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
