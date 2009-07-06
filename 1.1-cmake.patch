@@ -1,17 +1,3 @@
---- origsrc/gtk-qt-engine/CMakeLists.txt	2008-03-10 20:30:19.000000000 -0500
-+++ src/gtk-qt-engine/CMakeLists.txt	2009-01-25 19:47:52.063000000 -0600
-@@ -84,7 +84,10 @@ INCLUDE_DIRECTORIES(${GTK_INCLUDE_DIR} $
- ADD_SUBDIRECTORY(src)
- 
- IF (DEFINED KDE4_FOUND)
--	ADD_SUBDIRECTORY(kcm_gtk)
-+	OPTION(BUILD_kcm_gtk "Build directory kcm_gtk" TRUE)
-+	IF(BUILD_kcm_gtk)
-+		ADD_SUBDIRECTORY(kcm_gtk)
-+	ENDIF(BUILD_kcm_gtk)
- ENDIF (DEFINED KDE4_FOUND)
- 
- ADD_SUBDIRECTORY(po)
 --- origsrc/gtk-qt-engine/kcm_gtk/CMakeLists.txt	2008-03-10 20:30:19.000000000 -0500
 +++ src/gtk-qt-engine/kcm_gtk/CMakeLists.txt	2008-07-24 23:23:49.109375000 -0500
 @@ -16,14 +16,14 @@

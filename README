@@ -5,32 +5,35 @@ to use Qt widget styles. Aimed primarily at KDE users, this plugin
 provides a way to unify the look and feel of the desktop.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libbonoboui2_0-2.24.0-1
-  libgdk_pixbuf2.0_0-2.14.7-1
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-1
-  libpango1.0_0-1.22.4-1
-  libQtCore4-4.4.2-1
-  libQtGui4-4.4.2-1
-  libX11_6-1.1.5-1
+  cygwin-1.7.0-50
+  libbonoboui2_0-2.24.1-1
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.3-1
+  libglib2.0_0-2.20.4-1
+  libgtk2.0_0-2.16.3-1
+  libkdecore5-4.2.4-1
+  libpango1.0_0-1.24.3-1
+  libQtCore4-4.5.1-1
+  libQtGui4-4.5.1-1
+  libstdc++6-4.3.2-2
+  libX11_6-1.2.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  automoc4-0.9.87-1
+  automoc4-0.9.88-10
   binutils-20080624-2
-  cmake-2.6.2-3
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  make-3.81-1
-  pkg-config-0.23a-2
+  cmake-2.6.4-10
+  cygport-0.9.8-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
+  pkg-config-0.23b-10
 
 Canonical website:
-  http://gtk-qt.ecs.soton.ac.uk/
+  http://code.google.com/p/gtk-qt-engine/
 
 Canonical download:
-  http://gtk-qt.ecs.soton.ac.uk/downloads.php
+  http://code.google.com/p/gtk-qt-engine/downloads/list
 
 -------------------------------------------
 
@@ -50,10 +53,12 @@ This will create:
 Files included in the binary package:
 
   /usr/lib/gtk-2.0/2.10.0/engines/cygqt4engine.dll
-  /usr/share/doc/gtk2.0-engines-qt4-1.1/AUTHORS
-  /usr/share/doc/gtk2.0-engines-qt4-1.1/COPYING
-  /usr/share/doc/gtk2.0-engines-qt4-1.1/ChangeLog
-  /usr/share/doc/gtk2.0-engines-qt4-1.1/INSTALL
+  /usr/lib/kde4/kcm_gtk4.dll
+  /usr/share/applications/kde4/kcmgtk4.desktop
+  /usr/share/doc/gtk2.0-engines-qt4/AUTHORS
+  /usr/share/doc/gtk2.0-engines-qt4/COPYING
+  /usr/share/doc/gtk2.0-engines-qt4/ChangeLog
+  /usr/share/icons/kcmgtk.png
   /usr/share/locale/bg/LC_MESSAGES/gtkqt4engine.mo
   /usr/share/locale/cs/LC_MESSAGES/gtkqt4engine.mo
   /usr/share/locale/de/LC_MESSAGES/gtkqt4engine.mo
@@ -70,8 +75,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.1-1 -----
-Initial release for Cygwin.
+----- version 1.1-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

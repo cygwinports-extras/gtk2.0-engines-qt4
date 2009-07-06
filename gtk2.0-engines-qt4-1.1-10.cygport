@@ -1,0 +1,8 @@
+inherit kde4
+
+DESCRIPTION="GTK2 Qt4 engine"
+HOMEPAGE="http://code.google.com/p/gtk-qt-engine/"
+SRC_URI="http://gtk-qt-engine.googlecode.com/files/gtk-qt-engine-${PV}.tar.bz2"
+PATCH_URI="1.1-cmake.patch"
+
+SRC_DIR="gtk-qt-engine"
